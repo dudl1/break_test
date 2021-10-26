@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Break | Test_sis</title>
+    <link rel="stylesheet" href="screen.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+
+            <div class="header_wrap">
+
+                <svg class="header_logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 74 24">
+                    <g id="Сгруппировать_2" data-name="Сгруппировать 2" transform="translate(-104 -50)">
+                        <text id="Break" transform="translate(127 70)" fill="#e9e9e9" font-size="20" font-family="Tahoma"><tspan x="0" y="0">Break</tspan></text>
+                        <g id="Layer_2" data-name="Layer 2" transform="translate(103.807 51.807)">
+                            <g id="invisible_box" data-name="invisible box" transform="translate(-0.007 -0.007)">
+                                <rect id="Прямоугольник_1" data-name="Прямоугольник 1" width="21" height="21" transform="translate(0.201 0.201)" fill="none"/>
+                            </g>
+                            <g id="icons_Q2" data-name="icons Q2" transform="translate(0.88 0.88)">
+                                <g id="Сгруппировать_1" data-name="Сгруппировать 1">
+                                    <path id="Контур_1" data-name="Контур 1" d="M24.772,17.56,17.486,13.1c-.265-.177-.486-.044-.486.265v9.008c0,.309.221.442.486.265l7.286-4.46a.353.353,0,0,0,0-.618Z" transform="translate(-10.376 -8.154)" fill="#e3ab0e"/>
+                                    <path id="Контур_2" data-name="Контур 2" d="M11.715,2A9.671,9.671,0,1,0,18.6,4.832,9.715,9.715,0,0,0,11.715,2Zm0,17.664a7.949,7.949,0,1,1,7.949-7.949A7.949,7.949,0,0,1,11.715,19.663Z" transform="translate(-2 -2)" fill="#e3ab0e"/>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+
+            </div>
+
+        </header>
+
+        <section>
+
+            <div id="section_wrap" class="section_wrap">
+
+                <span class="wrap_h2">Welcome Back</span>
+
+                <span class="wrap_h3">Drive to continue to be surprised!</span>
+
+                <form method="post">
+
+                    <span id="clearButtonName" class="post_name_text post_text" style="display: none">Your</span>
+
+                    <input id="name" class="name_logIn" type="text" onclick="CheckInputName(this)" onkeyup="CheckInputName(this)" maxlength="25" required="required" /><label for="name" class="label_name post_text">Nickname</label>
+
+                    <span id="clearButtonPassword" class="post_password_text post_text" style="display: none">Your</span>
+
+                    <input id="password" class="password_logIn" type="password" onkeydown="CheckInputPassword(this)" onkeyup="CheckInputPassword(this)" required="required" /><label for="password" class="label_password post_text">Password</label>
+
+                    <input class="button_logIn post_text" type="button" value="Log In" />
+
+                </form>
+
+                <span class="return_password">Forgot password?</span>
+
+            </div>
+
+            <span id="create_account" class="create_account" onclick="create_Account()">Create an account</span>
+
+        </section>
+
+        <div class="background">
+
+            <ul class="circles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+
+        </div>
+
+    </div>
+
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+
+        // <!-- OPEN: INPUT _LABEL-->
+
+        function CheckInputName(e) {
+
+            if (e.value == "") {
+                document.getElementById("clearButtonName").style.display = "none";
+            } else {
+                document.getElementById("clearButtonName").style.display = "block";
+            }
+        }
+
+        function CheckInputPassword(e) {
+            if (e.value == "") {
+                document.getElementById("clearButtonPassword").style.display = "none";
+            } else {
+                document.getElementById("clearButtonPassword").style.display = "block";
+            }
+        }
+
+        // <!-- CLOSE: INPUT _LABEL-->
+
+        // <!-- OPEN: CLICK_SWITCH_FORM-->
+
+        const btn = document.querySelector('.create_account');
+        btn.addEventListener('click', function() {
+            $("span").toggleClass('active');
+            btn.innerHTML =
+                (btn.innerHTML === 'Create an account') ? btn.innerHTML = 'Log in account' : btn.innerHTML = 'Create an account';
+        })
+
+        // <!-- CLOSE: CLICK_SWITCH_FORM-->
+
+        // <!-- OPEN: CLICK_SECTION_WRAP -->
+
+        accountCreator = document.querySelector("#section_wrap");
+        accountLogIn;
+        function create_Account() {
+            if (accountCreator.classList.contains("active")) {
+                accountCreator.classList.remove('active');
+            } else {
+                accountCreator.classList.add("active");
+            }
+
+        }
+
+        // <!-- CLOSE: CLICK_SECTION_WRAP -->
+
+    </script>
+
+</body>
+</html>
