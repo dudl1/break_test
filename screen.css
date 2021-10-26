@@ -1,0 +1,334 @@
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+body {
+    background: #02010C;
+    font-family: Tahoma;
+
+}
+
+.post_name_text, .label_name,
+.post_password_text, .label_password,
+.return_password, .create_account {
+    user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+
+}
+
+.container {
+    margin: 0 auto;
+    width: 95%;
+    height: 10vw;
+
+}
+
+.header_wrap {
+    position: absolute;
+    margin: 2.5% 2.5%;
+    width: 90%;
+    height: 5vw;
+
+}
+
+.header_logo {
+    margin: 0 42.5%;
+    width: 12vw;
+
+}
+
+.section_wrap {
+    position: absolute;
+    margin: 13% 35%;
+    width: 25%;
+    height: 35vw;
+    background: #02010C rgba(0, 0, 0, 100);
+    border-radius: 17px;
+    transition: .3s ease-in-out;
+    border: 1px solid rgb(227, 171, 14);
+    -webkit-box-shadow: 0 1px 30px 1px rgba(255, 255, 255, 0.30);
+    box-shadow: 0 1px 30px 1px rgba(255, 255, 255, 0.30);
+
+}
+
+.section_wrap.active {
+    opacity: 0;
+}
+
+.wrap_h2 {
+    position: absolute;
+    margin: 6% 19%;
+    font-size: 2.3vw;
+    color: #c2c2c2;
+
+}
+
+.wrap_h3 {
+    position: absolute;
+    margin: 25% 10.8%;
+    font-size: 1.3vw;
+    color: #c2c2c2;
+
+}
+
+.post_text {
+    position: absolute;
+    color: #c2c2c2;
+    cursor: text;
+
+}
+
+.post_name_text {
+    margin: 1% 14%;
+    font-size: 0.8vw;
+
+}
+
+.post_password_text {
+    margin: -36% 14%;
+    font-size: 0.8vw;
+
+}
+
+.label_name, .label_password {
+    font-size: 1vw;
+    transition: .3s ease-in-out;
+
+}
+
+.label_name {
+    margin: -55.5% 14%;
+
+}
+
+.label_password {
+    margin: 26.5% 14%;
+
+}
+
+input {
+    display: block;
+    margin: 0 7.5%;
+    width: 18vw;
+    background: #02010C;
+    padding: 1.3vw 1.5vw;
+    color: #c2c2c2;
+    font-size: 1vw;
+    border-radius: 17px;
+    border: 1px solid rgb(227, 171, 14);
+    cursor: text;
+}
+
+input:active {
+    border: 1px solid #c2c2c2;
+}
+
+input:valid + .label_name,
+input:valid + .label_password {
+    font-size: 0.8vw;
+    text-transform: lowercase;
+
+}
+
+input:valid + .label_name {
+    margin: -59.7% 21.5%;
+
+}
+
+input:valid + .label_password {
+    margin: 22.5% 21.5%;
+
+}
+
+.name_logIn {
+    margin: 45% 7.6%;
+
+}
+
+.password_logIn {
+    margin: -37% 7.6%;
+
+}
+
+.return_password {
+    position: absolute;
+    margin: 42% 61%;
+    width: 7.5vw;
+    text-decoration: none;
+    font-size: 0.9vw;
+    color: #c2c2c2;
+    cursor: pointer;
+
+}
+
+.button_logIn {
+    margin: 55% 7.6%;
+    transition: .1s ease-in-out;
+
+}
+
+.button_logIn {
+    width: 21vw;
+    color: #02010C;
+    background: rgb(227, 171, 14);
+    border: none;
+    cursor: pointer;
+
+}
+
+.button_logIn:active {
+    margin: 55% 7.6%;
+    transform: scale(0.98);
+    border: none;
+
+}
+
+.create_account {
+    position: absolute;
+    margin: 44.5% 42.7%;
+    width: 9.5vw;
+    color: #c2c2c2;
+    font-size: 1.1vw;
+    cursor: pointer;
+
+}
+
+.create_account.active {
+    position: absolute;
+    margin: 44.5% 43.5%;
+    width: 9.5vw;
+    color: #c2c2c2;
+    font-size: 1.1vw;
+    cursor: pointer;
+
+}
+
+.background_wrap {
+    position: absolute;
+    margin: 1% 0;
+    width: 1820px;
+    height: 960px;
+    z-index: -99999999999999999;
+
+}
+
+.circles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -9999
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: #c2c2c2;
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+
+}
+
+.circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        border-radius: 0;
+        opacity: 0.2;
+        z-index: -99999999999999;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+        z-index: -99999999999999;
+    }
+
+}
