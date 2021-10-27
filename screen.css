@@ -53,11 +53,16 @@ body {
     border: 1px solid rgb(227, 171, 14);
     -webkit-box-shadow: 0 1px 30px 1px rgba(255, 255, 255, 0.30);
     box-shadow: 0 1px 30px 1px rgba(255, 255, 255, 0.30);
+    transform: scale(1);
 
 }
 
 .section_wrap.active {
     opacity: 0;
+    margin: 13% 30%;
+    transform: scale(0.85);
+    z-index: -9999999999999999;
+
 }
 
 .wrap_h2 {
@@ -188,6 +193,50 @@ input:valid + .label_password {
 
 }
 
+.section_wrap_2 {
+    opacity: 0;
+    position: absolute;
+    margin: 13% 40%;
+    width: 25%;
+    height: 35vw;
+    background: #02010C rgba(0, 0, 0, 100);
+    border-radius: 17px;
+    transition: .3s ease-in-out;
+    border: 1px solid rgb(227, 171, 14);
+    -webkit-box-shadow: 0 1px 30px 1px rgba(255, 255, 255, 0.30);
+    box-shadow: 0 1px 30px 1px rgba(255, 255, 255, 0.30);
+    transform: scale(0.95);
+    z-index: -999999999999;
+
+}
+
+.section_wrap_2.to_active {
+    opacity: 1;
+    position: absolute;
+    margin: 13% 35%;
+    width: 25%;
+    height: 35vw;
+    background: #02010C rgba(0, 0, 0, 100);
+    border-radius: 17px;
+    transition: .3s ease-in-out;
+    border: 1px solid rgb(227, 171, 14);
+    -webkit-box-shadow: 0 1px 30px 1px rgba(255, 255, 255, 0.30);
+    box-shadow: 0 1px 30px 1px rgba(255, 255, 255, 0.30);
+    transform: scale(1);
+    z-index: 999999999999999;
+
+}
+
+.wh2 {
+    margin: 6% 34%;
+
+}
+
+.wh3 {
+    margin: 25% 12.8%;
+
+}
+
 .create_account {
     position: absolute;
     margin: 44.5% 42.7%;
@@ -195,6 +244,7 @@ input:valid + .label_password {
     color: #c2c2c2;
     font-size: 1.1vw;
     cursor: pointer;
+    z-index: 9999999999999999;
 
 }
 
@@ -224,7 +274,7 @@ input:valid + .label_password {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    z-index: -9999
+    z-index: -99999999999999999999;
 }
 
 .circles li{
