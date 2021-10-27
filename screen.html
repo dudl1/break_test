@@ -63,6 +63,28 @@
 
             </div>
 
+            <div id="section_wrap_2" class="section_wrap_2">
+
+                <span class="wrap_h2 wh2">Join Us</span>
+
+                <span class="wrap_h3 wh3">Start learning interesting things!</span>
+
+                <form method="post">
+
+                    <span id="clearButtonName" class="post_name_text post_text" style="display: none">Your</span>
+
+                    <input id="name" class="name_logIn" type="text" onclick="CheckInputName(this)" onkeyup="CheckInputName(this)" maxlength="25" required="required" /><label for="name" class="label_name post_text">Nickname</label>
+
+                    <span id="clearButtonPassword" class="post_password_text post_text" style="display: none">Your</span>
+
+                    <input id="password" class="password_logIn" type="password" onkeydown="CheckInputPassword(this)" onkeyup="CheckInputPassword(this)" required="required" /><label for="password" class="label_password post_text">Password</label>
+
+                    <input class="button_logIn post_text" type="button" value="Join Us" />
+
+                </form>
+
+            </div>
+
             <span id="create_account" class="create_account" onclick="create_Account()">Create an account</span>
 
         </section>
@@ -124,7 +146,9 @@
         // <!-- OPEN: CLICK_SECTION_WRAP -->
 
         accountCreator = document.querySelector("#section_wrap");
-        accountLogIn;
+
+        accountLogIn = document.querySelector("#section_wrap_2");
+
         function create_Account() {
             if (accountCreator.classList.contains("active")) {
                 accountCreator.classList.remove('active');
@@ -132,6 +156,11 @@
                 accountCreator.classList.add("active");
             }
 
+            if (accountLogIn.classList.contains("to_active")) {
+                accountLogIn.classList.remove('to_active');
+            } else {
+                accountLogIn.classList.add("to_active");
+            }
         }
 
         // <!-- CLOSE: CLICK_SECTION_WRAP -->
