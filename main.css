@@ -1,0 +1,193 @@
+.container-main {
+    margin: 70px auto;
+    width: 80%;
+    height: 500px;
+    max-width: 1700px;
+    min-width: 700px;
+
+}
+
+.header_row {
+    margin: 0 auto;
+    width: 100%;
+    height: 100px;
+
+}
+
+.profile_column {
+    display: flex;
+    width: 70px;
+    height: 330px;
+
+}
+
+.profile_User {
+    width: 62px;
+    height: 62px;
+    border: 2.5px solid #ffffff;
+    border-radius: 60px;
+    cursor: pointer;
+
+}
+
+.profile_options {
+    position: absolute;
+    margin: 85px 13px;
+    width: 30px;
+    height: 40px;
+    opacity: 0;
+    z-index: -1;
+    transition: .4s ease-in-out;
+    transform: scale(0.80) translateY(-45px);
+
+}
+
+.profile_options.activeOptions {
+    opacity: 1;
+    z-index: 1;
+    transform: scale(1) translateY(0);
+
+}
+
+.profile_options > button {
+    margin-bottom: 20px;
+    width: 40px;
+    height: 40px;
+    outline: none;
+    border: none;
+    background: #02010C;
+    cursor: pointer;
+
+}
+
+.login_column {
+    margin: -340px auto;
+    width: 218px;
+
+}
+
+.setting_column {
+    display: flex;
+    margin-left: auto;
+    margin-top: 277px;
+    width: 70px;
+    height: 330px;
+
+}
+
+.setting_Button {
+    margin: 20px auto;
+    width: 62px;
+    height: 35px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+
+}
+
+.setting_Button > span {
+    margin: auto;
+    width: 40px;
+    height: 5px;
+    border-radius: 20px;
+    background: #c2c2c2;
+    transition: .2s ease-in-out;
+
+}
+
+.setting_Button.animationBtn span:nth-child(1) {
+    position: absolute;
+    transform: rotate(40deg);
+    margin: 15px 10px;
+
+}
+
+.setting_Button.animationBtn span:nth-child(2) {
+    position: absolute;
+    transform: scale(0.80);
+    margin: 15px 10px;
+    opacity: 0;
+
+}
+
+.setting_Button.animationBtn span:nth-child(3) {
+    position: absolute;
+    transform: rotate(-40deg);
+    margin: 15px 10px;
+
+}
+
+.setting_options {
+    position: absolute;
+    margin: 85px 16px;
+    width: 30px;
+    height: 40px;
+    opacity: 0;
+    z-index: -1;
+    transition: .4s ease-in-out;
+    transform: scale(0.80) translateY(-45px);
+
+}
+
+.setting_options.activeSettingOptions {
+    opacity: 1;
+    z-index: 1;
+    transform: scale(1) translateY(0);
+
+}
+
+.setting_options > button {
+    margin-bottom: 20px;
+    width: 40px;
+    height: 40px;
+    outline: none;
+    border: none;
+    background: #02010C;
+    cursor: pointer;
+
+}
+
+.section_row {
+    margin: 0 auto;
+    width: 80%;
+    height: 80vh;
+    overflow-y: scroll;
+
+}
+
+.section_row::-webkit-scrollbar {display: none;}
+
+.search_input {
+    display: flex;
+    margin: 20px auto;
+    width: 70%;
+    height: 65px;
+    border: 1px solid rgb(227, 171, 14);
+    border-radius: 21px;
+    background: #02010C;
+
+}
+
+.search_input > svg {
+    margin: auto 30px;
+
+}
+
+.wrap_search_input {
+    margin: auto -4%;
+    font-size: 19px;
+    width: 80%;
+    height: 2px;
+    background: none;
+    border: none;
+    padding: 28px 25px;
+    outline: none;
+
+}
+
+.wrap_search_input:valid,
+.wrap_search_input:active {
+    outline: none;
+    border: none;
+
+}
