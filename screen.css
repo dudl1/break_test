@@ -7,6 +7,7 @@
 body {
     background: #02010C;
     font-family: Tahoma;
+    height: 100%;
 
 }
 
@@ -34,7 +35,7 @@ body {
 
 .header_wrap {
     position: absolute;
-    margin: 2.5% 2.5%;
+    margin: 2.5% 5%;
     width: 90%;
     height: 5vw;
 
@@ -48,7 +49,7 @@ body {
 
 .section_wrap {
     position: absolute;
-    margin: 13% 35%;
+    margin: 13% 37.5%;
     width: 25%;
     height: 35vw;
     background: #02010C rgba(0, 0, 0, 100);
@@ -63,7 +64,7 @@ body {
 
 .section_wrap.active {
     opacity: 0;
-    margin: 13% 30%;
+    margin: 13% 32%;
     transform: scale(0.85);
     z-index: -9999999999999999;
 
@@ -201,7 +202,7 @@ input:valid + .label_password {
 .section_wrap_2 {
     opacity: 0;
     position: absolute;
-    margin: 12% 40%;
+    margin: 12% 42%;
     width: 25%;
     height: 38vw;
     background: #02010C rgba(0, 0, 0, 100);
@@ -218,7 +219,7 @@ input:valid + .label_password {
 .section_wrap_2.to_active {
     opacity: 1;
     position: absolute;
-    margin: 12% 35%;
+    margin: 13% 37.5%;
     width: 25%;
     height: 38vw;
     background: #02010C rgba(0, 0, 0, 100);
@@ -310,7 +311,7 @@ input:valid + .lp2 {
 
 .create_account {
     position: absolute;
-    margin: 44.5% 42.8%;
+    margin: 44.5% 45.2%;
     width: 9.5vw;
     color: #c2c2c2;
     font-size: 1.1vw;
@@ -322,7 +323,7 @@ input:valid + .lp2 {
 
 .create_account.active {
     position: absolute;
-    margin: 46.5% 43.8%;
+    margin: 47.3% 46.2%;
     width: 9.5vw;
     color: #c2c2c2;
     font-size: 1.1vw;
