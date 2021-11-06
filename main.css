@@ -50,7 +50,7 @@
 }
 
 .profile_options > button {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     width: 40px;
     height: 40px;
     outline: none;
@@ -137,7 +137,7 @@
 }
 
 .setting_options > button {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     width: 40px;
     height: 40px;
     outline: none;
@@ -152,7 +152,6 @@
     width: 80%;
     height: 80vh;
     overflow-y: scroll;
-
 }
 
 .section_row::-webkit-scrollbar {display: none;}
@@ -189,5 +188,26 @@
 .wrap_search_input:active {
     outline: none;
     border: none;
+
+}
+
+.wrap_extradition {
+    display: grid;
+    margin: 30px auto;
+    width: 71.5%;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+
+}
+
+.extradition {
+    display: flex;
+    width: 95%;
+    margin-top: 25px;
+    height: 200px;
+    background: #000000;
+    color: white;
+    border-radius: 21px;
+    border: 1px solid rgb(227, 171, 14);
 
 }
