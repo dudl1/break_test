@@ -5,7 +5,7 @@
 }
 
 body {
-    background: #02010C;
+    background: var(--body);
     font-family: Tahoma;
     height: 100%;
     color: #c2c2c2;
@@ -129,7 +129,7 @@ input {
     width: 18vw;
     background: #02010C;
     padding: 1.3vw 1.5vw;
-    color: #c2c2c2;
+    color: var(--search_input_3);
     font-size: 1vw;
     border-radius: 17px;
     border: 1px solid rgb(227, 171, 14);
