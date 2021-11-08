@@ -1,3 +1,90 @@
+:root {
+    --light-body: #FEFEFE;
+    --light-profile_User-border: #000000;
+    --light-profile_options_button: #FEFEFE;
+    --light-profile_options_button_svg: #444444;
+    --light-profile_options_button_svg_hover: #000000;
+    --light-login_column_svg: #444444;
+    --light-data-name_after: #444444;
+    --light-data-name_hover_after: #000000;
+    --light-setting_Button_span: #444444;
+    --light-setting_options_button: #FEFEFE;
+    --light-setting_options_button_svg: #444444;
+    --light-setting_options_button_svg_hover: #000000;
+    --light-search_input: rgb(227, 171, 14);
+    --light-search_input_2: #FEFEFE;
+    --light-search_input_3: #444444;
+    --light-ctr_3-stroke: #444444;
+    --light-elps_fill_4: #FEFEFE;
+    --light-elps_stroke_4: #444444;
+    --light-extradition: #FEFEFE;
+    --light-extradition_2: #E3AB0E;
+    --light-extradition_svg_1: 1.5px solid #7D7D7D;
+    --light-extradition_svg_2: #FEFEFE;
+    --light-extradition_svg_svg: #444444;
+    --light-extradition_text: #444444;
+    --light-extradition_text_hover: #000000;
+
+}
+
+body {
+    --body: #02010C;
+    --profile_User-border: #ffffff;
+    --profile_options_button: #02010C;
+    --profile_options_button_svg: #c2c2c2;
+    --profile_options_button_svg_hover: #ffffff;
+    --login_column_svg: #e9e9e9;
+    --data-name_after: #c2c2c2;
+    --data-name_hover_after: #ffffff;
+    --setting_Button_span: #c2c2c2;
+    --setting_options_button: #02010C;
+    --setting_options_button_svg: #c2c2c2;
+    --setting_options_button_svg_hover: #ffffff;
+    --search_input: rgb(227, 171, 14);
+    --search_input_2: #02010C;
+    --search_input_3: #c2c2c2;
+    --ctr_3-stroke: #e9e9e9;
+    --elps_fill_4: #02010c;
+    --elps_stroke_4: #e9e9e9;
+    --extradition: #000000;
+    --extradition_2: rgb(227, 171, 14);
+    --extradition_svg_1: none;
+    --extradition_svg_2: #E9E9E9;
+    --extradition_svg_svg: #02010C;
+    --extradition_text: #E9E9E9;
+    --extradition_text_hover: #ffffff;
+
+}
+
+body.theme-light {
+    --body: var(--light-body);
+    --profile_User-border: var(--light-profile_User-border);
+    --profile_options_button: var(--light-profile_options_button);
+    --profile_options_button_svg: var(--light-profile_options_button_svg);
+    --profile_options_button_svg_hover: var(--light-profile_options_button_svg_hover);
+    --login_column_svg: var(--light-login_column_svg);
+    --data-name_after: var(--light-data-name_after);
+    --data-name_hover_after: var(--light-data-name_hover_after);
+    --setting_Button_span: var(--light-setting_Button_span);
+    --setting_options_button: var(--light-setting_options_button);
+    --setting_options_button_svg: var(--light-setting_options_button_svg);
+    --setting_options_button_svg_hover: var(--light-setting_options_button_svg_hover);
+    --search_input: var(--light-search_input);
+    --search_input_2: var(--light-search_input_2);
+    --search_input_3: var(--light-search_input_3);
+    --ctr_3-stroke: var(--light-ctr_3-stroke);
+    --elps_fill_4: var(--light-elps_fill_4);
+    --elps_stroke_4: var(--light-elps_stroke_4);
+    --extradition: var(--light-extradition);
+    --extradition_2: var(--light-extradition_2);
+    --extradition_svg_1: var(--light-extradition_svg_1);
+    --extradition_svg_2: var(--light-extradition_svg_2);
+    --extradition_svg_svg: var(--light-extradition_svg_svg);
+    --extradition_text: var(--light-extradition_text);
+    --extradition_text_hover: var(--light-extradition_text_hover);
+
+}
+
 .container-main {
     margin: 70px auto;
     width: 80%;
@@ -24,7 +111,7 @@
 .profile_User {
     width: 62px;
     height: 62px;
-    border: 2.5px solid #ffffff;
+    border: 2.5px solid var(--profile_User-border);
     border-radius: 50px;
     cursor: pointer;
 
@@ -55,18 +142,18 @@
     height: 40px;
     outline: none;
     border: none;
-    background: #02010C;
+    background: var(--profile_options_button);
     cursor: pointer;
 
 }
 
 .profile_options > button > svg {
-    fill: #c2c2c2;
+    fill: var(--profile_options_button_svg);
 
 }
 
 .profile_options > button > svg:hover {
-    fill: white;
+    fill: var(--profile_options_button_svg_hover);
 
 }
 
@@ -78,7 +165,7 @@
     content: attr(data-name);
     font-size: 15px;
     opacity: 0;
-    color: #c2c2c2;
+    color: var(--data-name_after);
     transition: 0.2s;
     pointer-events: none;
     justify-items: start;
@@ -86,7 +173,7 @@
 
 [data-name]:hover::after {
     margin: -25px 56px;
-    color: white;
+    color: var(--data-name_hover_after);
     opacity: 1;
 }
 
@@ -96,6 +183,11 @@
     opacity: 1;
     transform: scale(1);
     transition: .3s ease-in-out;
+
+}
+
+.login_column > svg {
+    fill: var(--login_column_svg);
 
 }
 
@@ -129,8 +221,8 @@
     margin: auto;
     width: 40px;
     height: 5px;
-    border-radius: 20px;
-    background: #c2c2c2;
+    border-radius: 50px;
+    background: var(--setting_Button_span);
     transition: .2s ease-in-out;
 
 }
@@ -182,18 +274,18 @@
     height: 40px;
     outline: none;
     border: none;
-    background: #02010C;
+    background: var(--setting_options_button);
     cursor: pointer;
 
 }
 
 .setting_options > button > svg {
-    fill: #c2c2c2;
+    fill: var(--setting_options_button_svg);
 
 }
 
 .setting_options > button > svg:hover {
-    fill: white;
+    fill: var(--setting_options_button_svg_hover);
 
 }
 
@@ -218,10 +310,19 @@
     margin: 20px auto;
     width: 70%;
     height: 65px;
-    border: 1px solid rgb(227, 171, 14);
+    border: 1px solid var(--search_input);
     border-radius: 21px;
-    background: #02010C;
+    background: var(--search_input_2);
     transition: linear;
+
+}
+
+.search_input:hover,
+.search_input:valid,
+.search_input:active {
+    -webkit-box-shadow: 0px 6px 8px 0px rgba(34, 60, 80, 0.10);
+    -moz-box-shadow: 0px 6px 8px 0px rgba(34, 60, 80, 0.10);
+    box-shadow: 0px 6px 8px 0px rgba(34, 60, 80, 0.10);
 
 }
 
@@ -236,7 +337,14 @@
 .search_input > svg {
     margin: auto 30px;
 
-}
+}#Контур_3 {
+    fill: none;
+    stroke: var(--ctr_3-stroke);
+    stroke-linecap: round;
+ }#Эллипс_2 {
+    fill: var(--elps_fill_4);
+    stroke: var(--elps_stroke_4);
+   }
 
 .wrap_search_input {
     margin: auto -4%;
@@ -275,9 +383,9 @@
     width: 95%;
     margin-top: 25px;
     height: 250px;
-    background: #000000;
+    background: var(--extradition);
     border-radius: 21px;
-    border: 1px solid rgb(227, 171, 14);
+    border: 1px solid var(--extradition_2);
 
 }
 
@@ -293,21 +401,28 @@
     margin: 15px 15px;
     width: 59px;
     height: 59px;
+    border: var(--extradition_svg_1);
     border-radius: 50px;
-    background: #c2c2c2;
+    background: var(--extradition_svg_2);
     cursor: pointer;
     justify-content: center;
     align-items: center;
 
 }
+.extradition_svg > svg {
+    fill: var(--extradition_svg_svg);
+
+}
+
 
 .extradition_text {
     font-size: 24px;
+    color: var(--extradition_text);
 
 }
 
 .extradition_text:hover {
-    color: white;
+    color: var(--extradition_text_hover);
     cursor: pointer;
 
 }
