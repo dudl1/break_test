@@ -25,7 +25,7 @@
     width: 62px;
     height: 62px;
     border: 2.5px solid #ffffff;
-    border-radius: 60px;
+    border-radius: 50px;
     cursor: pointer;
 
 }
@@ -60,9 +60,49 @@
 
 }
 
+.profile_options > button > svg {
+    fill: #c2c2c2;
+
+}
+
+.profile_options > button > svg:hover {
+    fill: white;
+
+}
+
+[data-name]::after {
+    display: grid;
+    position: absolute;
+    margin: -25px 42px;
+    width: 130px;
+    content: attr(data-name);
+    font-size: 15px;
+    opacity: 0;
+    color: #c2c2c2;
+    transition: 0.2s;
+    pointer-events: none;
+    justify-items: start;
+}
+
+[data-name]:hover::after {
+    margin: -25px 56px;
+    color: white;
+    opacity: 1;
+}
+
 .login_column {
     margin: -340px auto;
     width: 218px;
+    opacity: 1;
+    transform: scale(1);
+    transition: .3s ease-in-out;
+
+}
+
+.login_column.scrollLogo {
+    opacity: 0;
+    transform: scale(0.95);
+    transition: .3s ease-in-out;
 
 }
 
@@ -147,11 +187,28 @@
 
 }
 
+.setting_options > button > svg {
+    fill: #c2c2c2;
+
+}
+
+.setting_options > button > svg:hover {
+    fill: white;
+
+}
+
 .section_row {
     margin: 0 auto;
     width: 80%;
     height: 80vh;
     overflow-y: scroll;
+    transition: .3s ease-in-out;
+}
+
+.section_row.scrollSection {
+    margin: -90px auto;
+    height: 90vh;
+
 }
 
 .section_row::-webkit-scrollbar {display: none;}
@@ -164,6 +221,15 @@
     border: 1px solid rgb(227, 171, 14);
     border-radius: 21px;
     background: #02010C;
+    transition: linear;
+
+}
+
+.search_input.scroll {
+    position: fixed;
+    margin: 0 9.7%;
+    width: 44.5%;
+    transition: linear;
 
 }
 
@@ -193,21 +259,55 @@
 
 .wrap_extradition {
     display: grid;
-    margin: 30px auto;
+    margin: 35px auto;
     width: 71.5%;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
 
 }
 
+.wrap_extradition.scrollExtradition {
+    margin: 125px auto;
+
+}
+
 .extradition {
-    display: flex;
     width: 95%;
     margin-top: 25px;
-    height: 200px;
+    height: 250px;
     background: #000000;
-    color: white;
     border-radius: 21px;
     border: 1px solid rgb(227, 171, 14);
+
+}
+
+.extradition_top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.extradition_svg {
+    display: flex;
+    margin: 15px 15px;
+    width: 59px;
+    height: 59px;
+    border-radius: 50px;
+    background: #c2c2c2;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.extradition_text {
+    font-size: 24px;
+
+}
+
+.extradition_text:hover {
+    color: white;
+    cursor: pointer;
 
 }
