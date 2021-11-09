@@ -11,11 +11,6 @@
 </head>
 <body>
 
-    <select id="theme" style="display: none;">
-        <option value="dark"></option>
-        <option value="light"></option>
-    </select>
-
     <div class="container-main body-main">
 
         <header>
@@ -26,7 +21,7 @@
 
                     <span id="header_wrap_p-l" class="profile_User">
 
-                        <img src="getVideoPreview.png">
+                        <img src="getVideoPreview.png" />
 
                     </span>
 
@@ -71,6 +66,7 @@
                     <div id="setting_options" class="setting_options">
 
                         <button class="btn_theme" data-name="Theme">
+                            <input id="themeCheckbox" type="checkbox"/>
                             <svg xmlns="http://www.w3.org/2000/svg" width="32.29" height="32.16" viewBox="0 0 32.29 32.16"> <g id="_5275083" data-name="5275083" transform="translate(-0.151 510.684)"> <path id="Контур_23" data-name="Контур 23" d="M13.623-510.577A16.96,16.96,0,0,0,6.3-507.353,21.564,21.564,0,0,0,3.216-504.2a15.867,15.867,0,0,0-2.523,5.262,16.514,16.514,0,0,0,1.965,12.992,16.561,16.561,0,0,0,4.6,4.726,16.389,16.389,0,0,0,7.308,2.644,20.676,20.676,0,0,0,4.419-.151,16.9,16.9,0,0,0,3.056-.864,3.655,3.655,0,0,0,2.083-1.552,3.868,3.868,0,0,0-.428-4.757,4.011,4.011,0,0,0-1.674-1.01,10.578,10.578,0,0,1-6.415-6.644,11.038,11.038,0,0,1,2.145-10.758,3.78,3.78,0,0,0,1.072-2.568,3.422,3.422,0,0,0-.372-1.641,3.854,3.854,0,0,0-2.039-1.937,2.69,2.69,0,0,0-1.3-.215A6.556,6.556,0,0,0,13.623-510.577Zm2.151,2.619a1.309,1.309,0,0,1,.558,1.035c0,.379-.037.454-.645,1.186A14.015,14.015,0,0,0,12.681-499a17.6,17.6,0,0,0,0,3.874,13.257,13.257,0,0,0,4.475,8.2,14.768,14.768,0,0,0,3.955,2.354,3.844,3.844,0,0,1,.781.391,1.361,1.361,0,0,1,0,1.855,10.975,10.975,0,0,1-3.862,1.186,18.245,18.245,0,0,1-3.57.006,13.629,13.629,0,0,1-9.688-6.127,14.542,14.542,0,0,1-1.9-4.713,14.575,14.575,0,0,1,.471-7.18A13.436,13.436,0,0,1,10.524-507,12.291,12.291,0,0,1,15-508.161,1.054,1.054,0,0,1,15.774-507.959Z" transform="translate(0 0)"/> <path id="Контур_24" data-name="Контур 24" d="M395.658-475.832a1.6,1.6,0,0,0-.382.282c-.315.335-.389.616-.389,1.454v.764l-.818.034c-.9.04-1.126.1-1.421.375a1.334,1.334,0,0,0,.114,2.051c.255.208.268.208,1.193.228l.931.027v.818c0,.717.02.851.154,1.112a1.7,1.7,0,0,0,.4.5c.241.194.3.208.784.208s.543-.013.784-.208a1.839,1.839,0,0,0,.409-.5,2.106,2.106,0,0,0,.147-1.112v-.818l.931-.027c.925-.02.938-.02,1.193-.228a1.334,1.334,0,0,0,.114-2.051c-.295-.275-.523-.335-1.414-.375l-.824-.034v-.777a2.334,2.334,0,0,0-.127-1.045,1.408,1.408,0,0,0-.7-.7A1.928,1.928,0,0,0,395.658-475.832Z" transform="translate(-367.793 -32.434)"/> <path id="Контур_25" data-name="Контур 25" d="M312.771-395.832A1.444,1.444,0,0,0,312-394.6a1.509,1.509,0,0,0,.556,1.045c.241.194.3.208.784.208s.543-.013.784-.208a1.512,1.512,0,0,0,.556-1.065,1.44,1.44,0,0,0-.824-1.233A1.927,1.927,0,0,0,312.771-395.832Z" transform="translate(-292.271 -107.559)"/> <path id="Контур_26" data-name="Контур 26" d="M315.658-315.832a1.6,1.6,0,0,0-.382.282c-.315.335-.389.616-.389,1.454v.764l-.818.033c-.9.04-1.126.1-1.421.375a1.334,1.334,0,0,0,.114,2.051c.255.208.268.208,1.193.228l.932.027v.818c0,.717.02.851.154,1.112a1.7,1.7,0,0,0,.4.5c.241.194.3.208.784.208s.543-.013.784-.208a1.838,1.838,0,0,0,.409-.5,2.106,2.106,0,0,0,.147-1.112v-.818l.932-.027c.925-.02.938-.02,1.193-.228a1.334,1.334,0,0,0,.114-2.051c-.295-.275-.523-.335-1.414-.375l-.824-.033v-.777a2.334,2.334,0,0,0-.127-1.045,1.408,1.408,0,0,0-.7-.7A1.928,1.928,0,0,0,315.658-315.832Z" transform="translate(-292.747 -182.706)"/> <path id="Контур_27" data-name="Контур 27" d="M432.771-195.832A1.444,1.444,0,0,0,432-194.6a1.509,1.509,0,0,0,.556,1.045c.241.194.3.208.784.208s.543-.013.784-.208a1.512,1.512,0,0,0,.556-1.066,1.44,1.44,0,0,0-.824-1.233A1.927,1.927,0,0,0,432.771-195.832Z" transform="translate(-404.905 -295.004)"/> </g></svg>
                         </button>
 
@@ -102,7 +98,7 @@
 
                     <svg xmlns="http://www.w3.org/2000/svg" width="28.741" height="28.909" viewBox="0 0 32.741 32.909"> <g id="search_svg" transform="translate(-494 -277)"> <path id="Контур_3" data-name="Контур 3" d="M524.832,308l-11.437-11.609" stroke-width="2.7"/> <g id="Эллипс_2" data-name="Эллипс 2" transform="translate(494 277)" stroke-width="2.3"> <circle cx="11.5" cy="11.5" r="11.5" stroke="none"/> <circle cx="11.5" cy="11.5" r="10.35" fill="none"/> </g> </g></svg>
 
-                    <input name="search" class="wrap_search_input" type="text" autocomplete="off" spellcheck="false" maxlength="2021" />
+                    <input id="search_inp" name="search_inp" class="wrap_search_input" type="text" maxlength="2021" spellcheck="false" autocomplete="off" required="required" /><label id="wrap_search_label" for="search_inp" class="wrap_search_label"></label>
                     
                 </div>
 
@@ -177,6 +173,20 @@
             </div>
 
         </section>
+
+        <script type="text/javascript">
+            //<!--OPEN: RANDOM_TEXT_IN_INPUT-->
+            var target = document.getElementById('wrap_search_label');
+            var titles = ['A good day', 'Rest', 'Clear thoughts', 'You will succeed', 'Find relaxing music'];
+
+            function newTitle () {
+                var i = (Math.random() * titles.length) | 0;
+                target.innerText = titles[i];
+            }
+
+            newTitle();
+            //<!--CLOSE: RANDOM_TEXT_IN_INPUT-->
+        </script>
 
     </div>
 
@@ -266,7 +276,121 @@
     </div>
 
     <script src="jquery-3.6.0.min.js"></script>
-    <script src="screen.js"></script>
+    <script>
+
+        // <!-- OPEN: INPUT_LABEL-->
+        eval(function(p,a,c,k,e,d){e=function(c){return c.toString(36)};if(!''.replace(/^/,String)){while(c--){d[c.toString(a)]=k[c]||c.toString(a)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('6 k(e){7(e.5==""){2.1("f").0.3="8"}9{2.1("f").0.3="4"}}6 j(e){7(e.5==""){2.1("d").0.3="8"}9{2.1("d").0.3="4"}}6 i(e){7(e.5==""){2.1("c").0.3="8"}9{2.1("c").0.3="4"}}6 h(e){7(e.5==""){2.1("b").0.3="8"}9{2.1("b").0.3="4"}}6 g(e){7(e.5==""){2.1("a").0.3="8"}9{2.1("a").0.3="4"}}',21,21,'style|getElementById|document|display|block|value|function|if|none|else|clearButtonPassword_2|clearButtonEmail_2|clearButtonName_2|clearButtonPassword||clearButtonName|CheckInputPassword_2|CheckInputEmail_2|CheckInputName_2|CheckInputPassword|CheckInputName'.split('|'),0,{}))
+        // <!-- CLOSE: INPUT_LABEL-->
+
+        // <!-- OPEN: CLICK_SWITCH_FORM-->
+        eval(function(p,a,c,k,e,d){e=function(c){return c.toString(36)};if(!''.replace(/^/,String)){while(c--){d[c.toString(a)]=k[c]||c.toString(a)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('g 0=6.7(\'.8\');0.9(\'5\',b(){$("c").a(\'d\');0.1=(0.1===\'3 4 2\')?0.1=\'e f 2\':0.1=\'3 4 2\'})',17,17,'btn|innerHTML|account|Create|an|click|document|querySelector|create_account|addEventListener|toggleClass|function|span|active|Log|in|const'.split('|'),0,{}))
+        // <!-- CLOSE: CLICK_SWITCH_FORM-->
+
+        // <!-- OPEN: CLICK_SECTION_WRAP_CHANGE_REGISTRATION -->
+        eval(function(p,a,c,k,e,d){e=function(c){return c.toString(36)};if(!''.replace(/^/,String)){while(c--){d[c.toString(a)]=k[c]||c.toString(a)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('2=b.a("#f");1=b.a("#e");d c(){9(2.0.8("4")){2.0.7(\'4\')}6{2.0.5("4")}9(1.0.8("3")){1.0.7(\'3\')}6{1.0.5("3")}}',16,16,'classList|accountLogIn|accountCreator|to_active|active|add|else|remove|contains|if|querySelector|document|create_Account|function|section_wrap_2|section_wrap'.split('|'),0,{}))
+        // <!-- CLOSE: CLICK_SECTION_WRAP_CHANGE_REGISTRATION -->
+
+        // <!-- OPEN: VALIDATION_FORM -->
+        eval(function(p,a,c,k,e,d){e=function(c){return c.toString(36)};if(!''.replace(/^/,String)){while(c--){d[c.toString(a)]=k[c]||c.toString(a)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('3.4("r").k=j(){9 b=3.4("q").5;9 c=3.4("d").5;2(b==""&&c==""){1("0 g h")}8 2(b==7){1("0 6 i")}8 2(c==7){1("0 6 d")}};3.4("o").k=j(){9 f=3.4("n").5;9 a=3.4("m").5;9 e=3.4("l").5;2(f==""&&a==""&&e==""){1("0 g h")}8 2(a==7){1("0 6 i")}8 2(a==7){1("0 6 p")}8 2(e==7){1("0 6 d")}};',28,28,'Enter|alert|if|document|getElementById|value|your|false|else|var|NewUserEmail|UserName|UserPassword|password|NewUserPassword|NewUserName|the|data|nickname|function|onclick|password_2|email_2|name_2|btn_registration|email|name|btn_login'.split('|'),0,{}))
+        // <!-- CLOSE: VALIDATION_FORM -->
+
+        var cM = document.getElementById('c-m');
+
+        function removeBtnMeets() {
+            cM.style.display = (cM.style.display == 'block') ? '' : 'none';
+            cM.parentNode.removeChild(cM);
+            localStorage.setItem('hide', cM.style.display); // сохраняем значение в ключ hide
+        }
+
+        if(localStorage.getItem('hide') == 'none') { // если значение ключа hide "inline"
+            cM.parentNode.removeChild(cM);
+        }
+
+        $('#form_login').submit(function() {
+            doSomething();
+        });
+
+        $("#header_wrap_p-l").click(function() {
+            var myButtonClasses = document.getElementById("profile_options").classList;
+
+            if (myButtonClasses.contains("activeOptions")) {
+                myButtonClasses.remove("activeOptions");
+
+            } else {
+                myButtonClasses.add("activeOptions");
+            }
+        });
+
+        $("#header_wrap_s-c").click(function() {
+            var myButtonClasses = document.getElementById("setting_options").classList;
+            var myButtonClasseA = document.getElementById("header_wrap_s-c").classList;
+
+            if (myButtonClasses.contains("activeSettingOptions")) {
+                myButtonClasses.remove("activeSettingOptions");
+
+            } else {
+                myButtonClasses.add("activeSettingOptions");
+            }
+
+            if (myButtonClasseA.contains("animationBtn")) {
+                myButtonClasseA.remove("animationBtn");
+
+            } else {
+                myButtonClasseA.add("animationBtn");
+            }
+        });
+
+        $(document).mouseup(function(e) {
+            var containerP = $('.profile_options.activeOptions');
+            if (containerP.has(e.target).length === 0) {
+                containerP.removeClass('activeOptions');
+            }
+        });
+
+        $('.section_row').scroll(function(){
+            if ($('.section_row').scrollTop() > 70) {
+                $('.search_input').addClass('scroll');
+                $('.section_row').addClass('scrollSection');
+                $('.wrap_extradition').addClass('scrollExtradition');
+                $('.login_column').addClass('scrollLogo');
+            }
+            else if ($('.section_row').scrollTop() < 90) {
+                $('.search_input').removeClass('scroll')
+                $('.section_row').removeClass('scrollSection');
+                $('.wrap_extradition').removeClass('scrollExtradition');
+                $('.login_column').removeClass('scrollLogo');
+            }
+        });
+
+        // Выводим "Нашёл", если какой-нибудь div на странице имеет класс "summary"
+        if ( $('div').hasClass('summary') ) alert( 'Нашёл' );
+
+        //<!-- OPEN: SWITCH THEME -->
+
+        (function() {
+            "use strict";
+            // смена темы
+            const themeCheckbox = document.querySelector("#themeCheckbox");
+            const body = document.querySelector("body");
+
+            themeCheckbox.addEventListener("click", function() {
+                if (themeCheckbox.checked) {
+                    localStorage.setItem("theme", "light");
+                } else {
+                    localStorage.setItem("theme", "dark");
+                }
+                body.classList.toggle("theme-light");
+            });
+
+            if (localStorage.getItem("theme") == "light") {
+                themeCheckbox.setAttribute("checked", "checked");
+                body.className += " theme-light";
+            }
+        })();
+
+        <!-- CLOSE: SWITCH THEME -->
+
+    </script>
 
 </body>
 </html>
