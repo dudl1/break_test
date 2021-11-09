@@ -14,6 +14,7 @@
     --light-search_input: rgb(227, 171, 14);
     --light-search_input_2: #FEFEFE;
     --light-search_input_3: #444444;
+    --light-wrap_search_label: #444444;
     --light-ctr_3-stroke: #444444;
     --light-elps_fill_4: #FEFEFE;
     --light-elps_stroke_4: #444444;
@@ -43,6 +44,7 @@ body {
     --search_input: rgb(227, 171, 14);
     --search_input_2: #02010C;
     --search_input_3: #c2c2c2;
+    --wrap_search_label: #E9E9E9;
     --ctr_3-stroke: #e9e9e9;
     --elps_fill_4: #02010c;
     --elps_stroke_4: #e9e9e9;
@@ -72,6 +74,7 @@ body.theme-light {
     --search_input: var(--light-search_input);
     --search_input_2: var(--light-search_input_2);
     --search_input_3: var(--light-search_input_3);
+    --wrap_search_label: var(--light-wrap_search_label);
     --ctr_3-stroke: var(--light-ctr_3-stroke);
     --elps_fill_4: var(--light-elps_fill_4);
     --elps_stroke_4: var(--light-elps_stroke_4);
@@ -279,6 +282,19 @@ body.theme-light {
 
 }
 
+.setting_options > button > input[type=checkbox] {
+    display: block;
+    margin: 10px 15px;
+    opacity: 0;
+    padding: 0;
+    width: 10px;
+    cursor: pointer;
+    position: absolute;
+    transform: scale(2.5);
+    border-radius: 0;
+
+}
+
 .setting_options > button > svg {
     fill: var(--setting_options_button_svg);
 
@@ -314,15 +330,16 @@ body.theme-light {
     border-radius: 21px;
     background: var(--search_input_2);
     transition: linear;
+    align-items: center;
 
 }
 
 .search_input:hover,
 .search_input:valid,
 .search_input:active {
-    -webkit-box-shadow: 0px 6px 8px 0px rgba(34, 60, 80, 0.10);
-    -moz-box-shadow: 0px 6px 8px 0px rgba(34, 60, 80, 0.10);
-    box-shadow: 0px 6px 8px 0px rgba(34, 60, 80, 0.10);
+    -webkit-box-shadow: 0 6px 8px 0 rgba(34, 60, 80, 0.10);
+    -moz-box-shadow: 0 6px 8px 0 rgba(34, 60, 80, 0.10);
+    box-shadow: 0 6px 8px 0 rgba(34, 60, 80, 0.10);
 
 }
 
@@ -358,10 +375,24 @@ body.theme-light {
 
 }
 
+.wrap_search_label {
+    position: absolute;
+    margin: 0 79px;
+    font-size: 21px;
+    cursor: text;
+    color: var(--wrap_search_label);
+
+}
+
 .wrap_search_input:valid,
 .wrap_search_input:active {
     outline: none;
     border: none;
+
+}
+
+.wrap_search_input:valid + .wrap_search_label {
+    opacity: 0;
 
 }
 
