@@ -335,8 +335,7 @@ body.theme-light {
 }
 
 .search_input:hover,
-.search_input:valid,
-.search_input:active {
+.extradition:hover {
     -webkit-box-shadow: 0 6px 8px 0 rgba(34, 60, 80, 0.10);
     -moz-box-shadow: 0 6px 8px 0 rgba(34, 60, 80, 0.10);
     box-shadow: 0 6px 8px 0 rgba(34, 60, 80, 0.10);
@@ -392,7 +391,7 @@ body.theme-light {
 }
 
 .wrap_search_input:valid + .wrap_search_label {
-    opacity: 0;
+    display: block;
 
 }
 
