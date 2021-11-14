@@ -1,6 +1,9 @@
 # break_test
 Product of Break
 
+#Update from November 14, 2021:
+   > The "Appearance" section has been added to the settings 
+
 #Update from November 12, 2021:
    > Optimized page loading
 
