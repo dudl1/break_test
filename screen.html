@@ -11,7 +11,7 @@
     <meta name="description" content="Break - High-speed service for a perfect holiday">
     <link rel="stylesheet" href="css/screen.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/left-setting.css">
+    <link rel="stylesheet" href="css/right-setting.css">
 </head>
 <body>
 
@@ -203,15 +203,15 @@
                     <div class="s_option_row">
 
                         <div class="s_option_row_wrap">
-                            <span class="s_appearance">Appearance</span>
+                            <span class="s_appearance tablinks" onclick="ckickBtn(event, 's_appearance')">Appearance</span>
                         </div>
 
                         <div class="s_option_row_wrap">
-                            <span class="s_privacy">Privacy</span>
+                            <span class="s_privacy tablinks" onclick="ckickBtn(event, 's_privacy')">Privacy</span>
                         </div>
 
                         <div class="s_option_row_wrap">
-                            <span class="s_other">Other</span>
+                            <span class="s_other tablinks" onclick="ckickBtn(event, 's_other')">Other</span>
                         </div>
 
                     </div>
@@ -220,136 +220,128 @@
 
                 <div class="s_options_column">
 
-                    <div class="s_appearance_command">
-
+                    <div id="s_appearance" class="s_appearance_command tabcontent" style="display: block">
                         <div class="s_hd1">
-
                             <span class="wrap_s_prsInform">Personal information</span>
-
                             <div class="s_tx1">
-
                                 <div>
-
                                     <div class="users_box">
-
                                         <div class="s_ub">
                                             <label for="s_tx1_input_name">Nickname</label><input id="s_tx1_input_name" class="s_tx1_input_name" type="text" value="Jigan" />
                                         </div>
-
                                         <div class="s_ub">
                                             <label for="s_tx1_input_location">Location</label><input id="s_tx1_input_location" class="s_tx1_input_location" type="text" value="Malaga" />
                                         </div>
-
                                     </div>
-
                                     <div class="users_box">
-
                                         <div class="s_ub">
                                             <label for="s_tx1_input_email">Email</label><input id="s_tx1_input_email" class="s_tx1_input_email" type="text" value="Jiganchick@gmail.com" />
                                         </div>
-
                                         <div class="s_ub">
                                             <label for="s_tx1_input_about">About me</label><textarea id="s_tx1_input_about" class="s_tx1_input_about">Now I'm resting in Chile, I don't answer anyone. If you have any questions, please contact Marina!</textarea>
                                         </div>
-
                                     </div>
-
                                 </div>
-
                                 <div class="s_tx1_input_interests">
-
                                     <div class="interests_box s_ub">
-
                                         <label class="s_ub_checkbox">
                                             <input id="interests_sport" class="wrap_s_ub_checkbox" type="checkbox" />
                                             <span class="checkmark"></span>
                                             <label for="interests_sport">Sport</label>
                                         </label>
-
                                         <label class="s_ub_checkbox">
                                             <input id="interests_gaming" class="wrap_s_ub_checkbox" type="checkbox" />
                                             <span class="checkmark"></span>
                                             <label for="interests_gaming">Gaming</label>
                                         </label>
-
                                     </div>
-
                                     <div class="interests_box s_ub">
-
                                         <label class="s_ub_checkbox">
                                             <input id="interests_shopping" class="wrap_s_ub_checkbox" type="checkbox" />
                                             <span class="checkmark"></span>
                                             <label for="interests_shopping">Shopping</label>
                                         </label>
-
                                         <label class="s_ub_checkbox">
                                             <input id="interests_programmer" class="wrap_s_ub_checkbox" type="checkbox" />
                                             <span class="checkmark"></span>
                                             <label for="interests_programmer">Programmer</label>
                                         </label>
-
                                     </div>
-
                                 </div>
-
                                 <div class="inp_box">
                                     <input type="submit" class="s_tx1_save" value="Save" />
                                 </div>
-
                             </div>
-
                         </div>
-
                         <div class="s_hd2">
-
                             <span class="wrap_s_uploadInfo">Upload your account information</span>
-
                             <div class="s_tx2">
-
                                 <div class="s_ub">
                                     <span>The opportunity to learn more about your account.  For easy viewing of the contents, everything will be arranged in folders.</span>
                                 </div>
-
                                 <div class="inp_box">
                                     <input type="submit" class="s_tx2_upload" value="Upload" />
                                 </div>
-
                             </div>
-
                         </div>
-
                         <div class="s_hd3">
-
                             <span class="wrap_s_deleteAccount">Deleting an account</span>
-
                             <div class="s_tx3">
-
                                 <div class="s_ub">
-
                                     <span >By deleting your account, you confirm that:</span>
-
                                     <div>
                                         <span>• All your data is deleted</span>
                                         <span>• Users won't be able to find you</span>
                                         <span>• The data will not be recoverable</span>
                                     </div>
-
                                     <label class="s_ub_checkbox">
                                         <input id="wrap_s_ub_checkbox" class="wrap_s_ub_checkbox" type="checkbox" />
                                         <span class="checkmark"></span>
                                         <label for="wrap_s_ub_checkbox">I agree to delete my account</label>
                                     </label>
-
                                 </div>
-
                                 <div class="inp_box">
                                     <input id="s_tx3_delete" type="submit" class="s_tx3_delete" value="Delete" disabled="disabled" />
                                 </div>
-
                             </div>
-
                         </div>
+                    </div>
 
+                    <div id="s_privacy" class="s_privacy_command tabcontent" style="display: none;">
+                        <div class="s_hv1">
+                            <span class="wrap_s_dataProtect">Data protection</span>
+                            <div class="s_tp1">
+                                <div class="s_at">
+                                    <span>All data, requests, and correspondence are stored on the copyright holder's server and encrypted by the Base64 binary data encoding standard</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="s_hv2">
+                            <span class="wrap_s_perCook">Personal cookies</span>
+                            <div class="s_tp2">
+                                <span>If necessary, you can disable cookies so that it does not collect information about your actions on this service</span>
+                                <div class="s_at" style="width: 100px;">
+                                    <label class="s_at_checkbox">
+                                        <input id="checkbox_cookies" class="wrap_s_ub_checkbox" type="checkbox" />
+                                        <span class="checkmark"></span>
+                                        <label for="checkbox_cookies">Cookies</label>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="s_other" class="s_other_command tabcontent" style="display: none;">
+                        <div class="s_hp1">
+                            <span class="wrap_s_projectInform">Information about the service</span>
+                            <div class="s_ts1">
+                                <span class="s_uq">Service version</span>
+                                <div class="s_uq">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="44" height="48" viewBox="0 0 62 66"> <g id="Layer_2" data-name="Layer 2" transform="translate(0 0.463)"> <g id="invisible_box" data-name="invisible box" transform="translate(0 0)"> <rect id="Прямоугольник_1" data-name="Прямоугольник 1" width="62" height="66" transform="translate(0 -0.463)" fill="none"/> </g> <g id="icons_Q2" data-name="icons Q2" transform="translate(0.361 3.086)"> <g id="Сгруппировать_1" data-name="Сгруппировать 1"> <path id="Контур_1" data-name="Контур 1" d="M40.954,27.011,18.5,13.265c-.817-.544-1.5-.136-1.5.817V41.846c0,.953.681,1.361,1.5.817L40.954,28.916a1.089,1.089,0,0,0,0-1.905Z" transform="translate(3.415 1.979)" fill="#f8d808"/> <path id="Контур_2" data-name="Контур 2" d="M31.942,2a29.806,29.806,0,1,0,21.212,8.73A29.942,29.942,0,0,0,31.942,2Zm0,54.44a24.5,24.5,0,1,1,24.5-24.5A24.5,24.5,0,0,1,31.942,56.44Z" transform="translate(-2 -2)" fill="#f8d808"/> </g> </g> </g></svg>
+                                </div>
+                                <span class="s_uq">v. 16.0011.21</span>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
@@ -370,6 +362,24 @@
 
             newTitle();
             //<!--CLOSE: RANDOM_TEXT_IN_INPUT-->
+
+            //<!--OPEN: CLICK_TO_LEFT_SETTING_WRAP_BUTTONS-->
+            id="defaultOpen"
+            function ckickBtn(evt, cityName) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+                document.getElementById(cityName).style.display = "block";
+                evt.currentTarget.className += " active";
+            }
+            document.getElementById("defaultOpen").click();
+            //<!--CLOSE: CLICK_TO_LEFT_SETTING_WRAP_BUTTONS-->
         </script>
 
     </div>
