@@ -24,6 +24,8 @@
     width: 25%;
     justify-content: center;
     align-items: start;
+    border-radius: 10px 0 0 10px;
+    border: 0.5px solid rgb(227, 171, 1, 1);
 
 }
 
@@ -116,24 +118,40 @@
 
 }
 
-.s_appearance_command {
+.s_appearance_command,
+.s_privacy_command,
+.s_other_command {
     width: 90%;
     margin: 0 auto;
 
 }
 
-.s_options_column > .s_appearance_command > div {
-    display: block;
-
-}
-
-.wrap_s_prsInform, .wrap_s_uploadInfo, .wrap_s_deleteAccount {
+.wrap_s_prsInform, .wrap_s_uploadInfo, .wrap_s_deleteAccount,
+.wrap_s_dataProtect, .wrap_s_perCook, .wrap_s_projectInform {
     font-size: 26px;
     font-weight: 500;
 
 }
 
-.s_tx1, .s_tx2, .s_tx3 {
+.s_hv2 {
+    margin: 50px auto;
+
+}
+
+.s_ts1 {
+    display: grid;
+    margin: auto 30px;
+    justify-content: start;
+
+}
+
+.s_uq {
+    margin: 10px auto;
+
+}
+
+.s_tx1, .s_tx2, .s_tx3,
+.s_tp1, .s_tp2 {
     display: block;
     margin: auto 30px;
 
@@ -149,14 +167,16 @@
 
 .s_tx1 > div > div,
 .s_tx2 > .s_ub,
-.s_tx3 > .s_ub {
+.s_tx3 > .s_ub,
+.s_tp1, .s_tp2,
+.s_ts1 {
     padding-top: 25px;
 
 }
 
-.s_ub > label,
-.s_ub > span {
-    margin: 0 10px;
+.s_ub > label, .s_ub > span,
+.s_at > span, .s_tp2 > span,
+.s_ts1 > span {
     font-size: 19px;
     font-weight: 500;
 
@@ -260,21 +280,25 @@
 
 }
 
-.s_ub_checkbox > label {
-    margin: auto 10px;
+.s_at_checkbox {
+    display: flex;
+    margin: 30px 0;
 
 }
 
-.s_ub_checkbox .wrap_s_ub_checkbox {
+.s_ub_checkbox > label,
+.s_at_checkbox > label {
+    margin: auto 10px;
+    cursor: pointer;
+
+}
+
+.s_ub_checkbox .wrap_s_ub_checkbox,
+.s_at_checkbox .wrap_s_ub_checkbox {
     position: absolute;
     opacity: 0;
     height: 0;
     width: 0;
-
-}
-
-.s_ub_checkbox > label {
-    cursor: pointer;
 
 }
 
@@ -288,14 +312,25 @@
 
 }
 
-.s_ub_checkbox > label[disabled] {
-    background: #275F8B;
-}
-
-.s_ub_checkbox .wrap_s_ub_checkbox:checked ~ .checkmark {
+.s_ub_checkbox .wrap_s_ub_checkbox:checked ~ .checkmark,
+.s_at_checkbox .wrap_s_ub_checkbox:checked ~ .checkmark{
     background-color: #E3AB0E;
     transition: .2s ease-in-out;
 
 }
 
 .s_options_column::-webkit-scrollbar {display: none;}
+
+.tabcontent {
+    display: none;
+    animation: fadeEffect 1s ease-in-out;
+
+}
+
+.active.tablinks {
+    animation: .7s Tablinks ease-in-out;
+    -webkit-box-shadow: 0 0 28px -4px rgba(0, 0, 0, 0.27);
+    -moz-box-shadow: 0 0 28px -4px rgba(0, 0, 0, 0.27);
+    box-shadow: 0 0 28px -4px rgba(0, 0, 0, 0.27);
+
+}
